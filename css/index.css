@@ -1,0 +1,305 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*顶部工具栏*/
+.toptool .container-fluid .row > div {
+  color: #808088;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #000;
+  text-align: center;
+}
+.toptool .container-fluid .row > div a {
+  color: #808088;
+}
+.toptool .container-fluid .row > div .btn-danger {
+  color: #fff;
+}
+/*-导航条*/
+.nav-wjs .navbar {
+  min-height: 80px;
+  padding-top: 15px;
+}
+.nav-wjs .navbar-default {
+  margin-bottom: 0;
+}
+.nav-wjs .navbar-default .navbar-brand {
+  margin-top: -25px;
+  line-height: 50px;
+  font-size: 70px;
+}
+.nav-wjs .navbar-default .navbar-brand .wjsfont-logo {
+  color: red;
+}
+/*录播图*/
+.carousel img {
+  width: 100% ;
+}
+/*支付交易*/
+.zhifuBaoz {
+  padding-left: 30px;
+}
+.zhifuBaoz .container > div > div {
+  padding-top: 30px;
+}
+.zhifuBaoz .media:hover .wjsfont {
+  color: red;
+}
+.zhifuBaoz .media:hover > a {
+  color: red;
+}
+.zhifuBaoz .media a {
+  color: #808088;
+}
+.zhifuBaoz .media h4 {
+  font-size: 24px;
+}
+.zhifuBaoz .media .wjsfont {
+  font-size: 40px;
+}
+/*正在排队*/
+.paiDui {
+  margin-top: 30px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 30px 0;
+  padding-left: 20px;
+}
+.paiDui .container .row div:nth-of-type(1) a {
+  color: red;
+}
+.paiDui .container .row div:nth-of-type(2) a {
+  color: #000;
+}
+/*特别推荐 微投资*/
+.tuiJian .tab-content .row > div {
+  padding: 10px;
+}
+.tuiJian .tab-content .row > div > .box-a {
+  display: block;
+  background: #f7f7f7;
+  color: #808088;
+  box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
+}
+.tuiJian .tab-content .row > div > .box-a .content-box {
+  padding: 0 10px;
+  border-right: 1px dashed;
+  position: relative;
+}
+.tuiJian .tab-content .row > div > .box-a .content-box:after {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  content: '';
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 1px 1px #ccc;
+}
+.tuiJian .tab-content .row > div > .box-a .content-box:before {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  transform: translate(50%, 50%);
+  border-top: 1px solid #ccc;
+  box-shadow: 0px -1px 1px #ccc;
+}
+.tuiJian .tab-content .row > div > .box-a .right-box {
+  padding: 0;
+  padding-top: 50px;
+  text-align: center;
+  height: 100%;
+}
+.tuiJian .tab-content .row > div h4 {
+  text-align: center;
+}
+.tuiJian .tab-content .row > div .pull-right {
+  text-align: right;
+}
+/*红色背景传递卡片*/
+.tuiJian .tab-content .row > div > a.box-a2 {
+  background: red;
+  color: #fff;
+}
+.tuiJian .tab-content .row > div > a.box-a2 .wjsfont {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 40px;
+}
+/*有进度条的卡片*/
+.tuiJian {
+  overflow: hidden;
+}
+.tuiJian .tab-content .row > div > a.box-a3 .pull-right {
+  width: 50%;
+}
+.tuiJian .tab-content .row > div > a.box-a3 .right-box span:nth-of-type(1) {
+  color: green;
+  border: 1px solid green;
+  margin-right: 10px;
+}
+.tuiJian .tab-content .row > div > a.box-a3 .right-box span:nth-of-type(2) {
+  color: red;
+  border: 1px solid red;
+}
+.tuiJian .tab-content .row > div > a.box-a3 .right-box p {
+  margin-top: 10px;
+}
+/*全球新闻模块*/
+#profile-news {
+  display: block;
+}
+#profile-news .row li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+#profile-news .row li a {
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+}
+#profile-news .row li a:hover .wjsfont {
+  background: red;
+}
+#profile-news .row li a:hover:focus {
+  background: red;
+}
+#profile-news .row li .wjsfont {
+  text-align: center;
+  line-height: 70px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #ccc;
+  border-radius: 50%;
+}
+#profile-news .row li .wjsfont::before {
+  font-size: 50px;
+  color: #fff;
+}
+#profile-news .quanqiunews {
+  font-size: 30px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+#profile-news .quanqiunews:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid ;
+  background: #fff;
+  transform: translate(50%, 50%);
+}
+#profile-news #home {
+  width: 100%;
+}
+#profile-news #home p {
+  margin: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+#profile-news #home p:hover a {
+  background: #fff;
+}
+#profile-news #home p:last-child {
+  border-bottom: 1px solid #ccc;
+}
